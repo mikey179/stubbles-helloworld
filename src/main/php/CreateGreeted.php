@@ -17,7 +17,7 @@ use stubbles\webapp\response\Error;
  * @Name('Change greeted person')
  * @Description('Allows to change the currently greeted person.')
  * @Status(code=200, description='Default.')
- * @Status(code=500, description='Error while retrieving the greeted person. Please try again later.')
+ * @Status(code=500, description='Error while storing the greeting. Please try again later.')
  * @SupportsMimeType(mimeType='application/json')
  */
 class CreateGreeted implements Target

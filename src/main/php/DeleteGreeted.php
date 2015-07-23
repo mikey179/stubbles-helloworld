@@ -14,6 +14,7 @@ use stubbles\webapp\UriPath;
  * @Name('Delete a greeting')
  * @Description('Deletes a greeting.')
  * @Status(code=200, description='Default.')
+ * @Status(code=404, description='Nothing found that could be deleted.')
  * @Status(code=500, description='Error while retrieving the greeted person. Please try again later.')
  * @SupportsMimeType(mimeType='application/json')
  */
