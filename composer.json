@@ -10,7 +10,6 @@
     "require": {
         "php": ">=5.4.0",
         "ext-pdo_sqlite": "*",
-        "stubbles/core": "^6.3",
         "stubbles/webapp-core": "^6.2",
         "stubbles/dbal": "^6.0"
     },
