@@ -16,6 +16,7 @@ use stubbles\webapp\UriPath;
  * @Status(code=200, description='Default.')
  * @Status(code=404, description='Nothing found that could be deleted.')
  * @Status(code=500, description='Error while retrieving the greeted person. Please try again later.')
+ * @Parameter(name='greeted', in='path', description='The id of the greeting to delete.', required=true)
  * @SupportsMimeType(mimeType='application/json')
  */
 class DeleteGreeted implements Target

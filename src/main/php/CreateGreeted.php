@@ -12,12 +12,13 @@ use stubbles\webapp\Target;
 use stubbles\webapp\UriPath;
 use stubbles\webapp\response\Error;
 /**
- * Can change the currently greeted person.
+ * Creates a greating.
  *
- * @Name('Change greeted person')
- * @Description('Allows to change the currently greeted person.')
- * @Status(code=200, description='Default.')
+ * @Name('Create a greeting.')
+ * @Description('Allows to create a greeting for a person. Data should be submitted using <i>application/x-www-form-urlencoded</i>.')
+ * @Status(code=201, description='Greeting created successfully.')
  * @Status(code=500, description='Error while storing the greeting. Please try again later.')
+ * @Header(name='Location', description='URL under which the new greeting can be accessed.')
  * @SupportsMimeType(mimeType='application/json')
  */
 class CreateGreeted implements Target

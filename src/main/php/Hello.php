@@ -16,6 +16,7 @@ use stubbles\webapp\UriPath;
  * @Status(code=200, description='Default.')
  * @Status(code=404, description='No person to greet found.')
  * @Status(code=500, description='Error while retrieving the greeted person. Please try again later.')
+ * @Parameter(name='greeted', in='path', description='The id of the greeting to display. Defaults to "World" if none given.')
  * @SupportsMimeType(mimeType='application/json')
  */
 class Hello implements Target
