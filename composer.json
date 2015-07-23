@@ -1,0 +1,22 @@
+{
+    "name": "stubbles/helloworld",
+    "description": "Simple Hello World project with stubbles.",
+    "authors": [
+        {
+            "name": "Frank Kleine",
+            "email": "frank.kleine@1und1.de"
+        }
+    ],
+    "require": {
+        "stubbles/core": "^6.3",
+        "stubbles/webapp-core": "^6.2",
+        "stubbles/dbal": "^6.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "stubbles\\helloworld\\": "src/main/php"
+        }
+    }
+}
