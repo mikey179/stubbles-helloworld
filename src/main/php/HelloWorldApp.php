@@ -15,8 +15,13 @@ class HelloWorldApp extends WebApp
      */
     protected function configureRouting(RoutingConfigurator $routing)
     {
+        $routing->apiIndexOnGet('/api$')
+                ->supportsMimeType(
+                        'text/html',
+                        'stubbles\helloworld\ApiHtml'
+                )->excludeFromApiIndex();
+        $routing->onGet('/{greeted}?', 'stubbles\helloworld\Hello');
         $routing->onPost('/$', 'stubbles\helloworld\CreateGreeted');
         $routing->onDelete('/{greeted}', 'stubbles\helloworld\DeleteGreeted');
-        $routing->onGet('/{greeted}?', 'stubbles\helloworld\Hello');
     }
 }

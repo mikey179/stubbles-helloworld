@@ -19,6 +19,8 @@ use stubbles\webapp\response\Error;
  * @Status(code=201, description='Greeting created successfully.')
  * @Status(code=500, description='Error while storing the greeting. Please try again later.')
  * @Header(name='Location', description='URL under which the new greeting can be accessed.')
+ * @Parameter(name='path', in='body', description='Path under which creating should be accessible.', required=true)
+ * @Parameter(name='greeted', in='body', description='Name of person or thing to greet.', required=true)
  * @SupportsMimeType(mimeType='application/json')
  */
 class CreateGreeted implements Target

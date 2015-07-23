@@ -12,7 +12,7 @@ use stubbles\webapp\UriPath;
  * Hello world example resource.
  *
  * @Name('Hello world')
- * @Description('Example for a hello world resource.')
+ * @Description('Displays a greeting.')
  * @Status(code=200, description='Default.')
  * @Status(code=404, description='No person to greet found.')
  * @Status(code=500, description='Error while retrieving the greeted person. Please try again later.')
